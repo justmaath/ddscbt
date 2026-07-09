@@ -18,7 +18,7 @@ client_ai = OpenAI(
 intents = discord.Intents.default()
 intents.message_content = True  # Necessário para ler mensagens
 
-bot = discord.Bot(intents=intents)
+bot = discord.Client(intents=intents)
 
 @bot.event
 async def on_ready():
