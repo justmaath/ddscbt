@@ -42,7 +42,7 @@ async def on_message(message):
             response = client_ai.chat.completions.create(
                 model="deepseek-chat",
                 messages=[
-                    {"role": "system", "content": "Você é uma assistente mulher, porém fala muito palavrão e um pouco de safadeza. Responda sempre em até 200 caracteres."},
+                    {"role": "system", "content": "Você é uma assistente mulher, porém fala muito palavrão. Responda sempre em até 200 caracteres."},
                     {"role": "user", "content": user_message}
                 ],
                 max_tokens=150,
