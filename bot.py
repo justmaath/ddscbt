@@ -52,8 +52,8 @@ async def on_message(message):
             ai_reply = response.choices[0].message.content.strip()
             
             # Garante limite de 200 caracteres
-            if len(ai_reply) > 200:
-                ai_reply = ai_reply[:197] + "..."
+            if len(ai_reply) > 400:
+                ai_reply = ai_reply[:397] + "..."
             
             await message.reply(ai_reply)
             
